@@ -4,4 +4,4 @@ Simple micro-frontend demonstration stack. Objective here is to demonstrate shar
 
 ## Running locally
 
-Clone repository, execute `npm install && npm start` at the root of the monorepo. This command will execute the provider and container React applications.
+Clone repository, execute `npm run install && npm start` at the root of the monorepo. This command will execute the provider and container React applications.

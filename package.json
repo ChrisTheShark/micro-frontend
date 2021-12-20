@@ -4,9 +4,12 @@
   "description": "Simple micro-frontend demonstration stack.",
   "scripts": {
     "start": "concurrently --kill-others \"npm run start-provider\" \"npm run start-container\"",
+    "install": "concurrently --kill-others \"npm run install-provider\" \"npm run install-container\"",
+    "install-provider": "cd mf-provider && npm install",
+    "install-container": "cd mf-container && npm install",
     "start-provider": "cd mf-provider && npm start",
     "start-container": "cd mf-container && npm start"
-  },
+  },    
   "keywords": [
     "micro",
     "micro-frontend",
