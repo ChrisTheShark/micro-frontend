@@ -1,0 +1,24 @@
+{
+  "name": "micro_frontends",
+  "version": "0.0.1",
+  "description": "Simple micro-frontend demonstration stack.",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run start-provider\" \"npm run start-container\"",
+    "start-provider": "cd mf-provider && npm start",
+    "start-container": "cd mf-container && npm start"
+  },
+  "keywords": [
+    "micro",
+    "micro-frontend",
+    "react",
+    "webpack5"
+  ],
+  "author": {
+    "name": "Chris Dyer",
+    "email": "cdyer1980@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
